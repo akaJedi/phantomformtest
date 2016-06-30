@@ -43,26 +43,24 @@ page.open("https://www.ameriadvance.com/apply.html", function(status) {
             document.querySelector("input[name='bank_aba']").value = "123456780";
             document.querySelector("input[name='bank_account_number']").value = "1234567899";
             document.querySelector("select[name='bank_account_type']").value = "checking";
-            // document.querySelector("radio[id='car_title_yes']").value = "selected";
             document.getElementById('car_title_no').click();
-            // document.querySelector("input[type='checkbox']").value = "checking";
             var ev = document.createEvent("MouseEvents");
             ev.initEvent("click", true, true);
             // document.querySelector("input[type='checkbox']").dispatchEvent(ev);;
             // document.getElementById("t3SubmitPage2").click();
             // console.log("Login submitted!");
-            console.log('...');
-            page.sendEvent('click', page.event.key.A, null, null, 0x02000000 | 0x08000000);
-
-            var ev = document.createEvent("MouseEvents");
-            ev.initEvent("click", true, true);
-            document.querySelector("input[type='checkbox']").dispatchEvent(ev);
-            if(ev){
-                console.log('exist');
-                console.log(ev);
-            }else{
-                console.log('kriva');
-            }
+            // console.log('...');
+            // page.sendEvent('click', page.event.key.A, null, null, 0x02000000 | 0x08000000);
+            //
+            // var ev = document.createEvent("MouseEvents");
+            // ev.initEvent("click", true, true);
+            // document.querySelector("input[type='checkbox']").dispatchEvent(ev);
+            // if(ev){
+            //     console.log('exist');
+            //     console.log(ev);
+            // }else{
+            //     console.log('kriva');
+            // }
 
             document.getElementById("t3SubmitPage2").click();
             console.log("Login submitted!");
