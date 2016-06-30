@@ -44,8 +44,8 @@ page.open("https://www.ameriadvance.com/apply.html", function(status) {
             document.querySelector("input[name='bank_account_number']").value = "1234567899";
             document.querySelector("select[name='bank_account_type']").value = "checking";
             document.getElementById('car_title_no').click();
-            var ev = document.createEvent("MouseEvents");
-            ev.initEvent("click", true, true);
+            // var ev = document.createEvent("MouseEvents");
+            // ev.initEvent("click", true, true);
             // document.querySelector("input[type='checkbox']").dispatchEvent(ev);;
             // document.getElementById("t3SubmitPage2").click();
             // console.log("Login submitted!");
